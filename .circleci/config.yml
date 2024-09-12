@@ -1,0 +1,42 @@
+version: 2.1
+
+executors:
+  cypress-executor:
+    docker:
+      - image: cypress/included:13.14.2 # Use a Cypress image with all necessary dependencies
+    working_directory: ~/project
+
+jobs:
+  build:
+    executor: cypress-executor
+    steps:
+      - checkout # Check out the source code from the repository
+
+      - run:
+          name: Install Dependencies
+          command: |
+            npm install
+
+      - run:
+          name: Run Cypress Tests
+          command: |
+            npx cypress run --reporter mochawesome --reporter-options reportDir=cypress/reports,charts=true,reportPageTitle='Cypress Test Report',embeddedScreenshots=true,inlineAssets=true
+
+      - run:
+          name: Generate Mochawesome Report
+          command: |
+            npx mochawesome-merge cypress/reports/*.json > cypress/reports/mochawesome.json
+            npx mochawesome-report-generator cypress/reports/mochawesome.json
+
+      - store_artifacts:
+          path: cypress/reports
+          destination: cypress-reports
+
+      - store_test_results:
+          path: cypress/reports
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - build

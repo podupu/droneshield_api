@@ -1,0 +1,64 @@
+# Node modules
+node_modules/
+
+# Cypress specific
+cypress/videos/
+cypress/screenshots/
+cypress/fixtures/
+cypress/results/
+cypress/downloads/
+cypress/reports/
+
+# Typescript
+*.tsbuildinfo
+*.d.ts
+
+# Build output
+dist/
+build/
+*.js
+*.map
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.vscode/
+.idea/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# NPM cache
+.npm/
+
+# Yarn cache
+.yarn/
+
+# JetBrains IDEs
+*.iml
+.idea/
+*.iws
+*.ipr
+
+# Cypress cache
+.cypress/cache/
+
+# Temporary files
+*.tmp
+
+# Coverage
+coverage/
