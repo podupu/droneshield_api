@@ -24,9 +24,5 @@ This project contains automated tests for the Petstore API using Cypress and Typ
 - **cypress/support**: Custom commands and setup.
 - **cypress/plugins**: Cypress plugins configuration.
 
-## Contribution Guidelines
-- Ensure tests are scoped correctly.
-- Follow coding standards as outlined in project documentation.
-
 ## Reporting Issues
-Please refer to the `BUGREPORT-2.md` file for the bug reporting template.
+Please refer to the `BUGREPORT.md` file for the bug reporting template.
