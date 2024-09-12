@@ -1,7 +1,6 @@
 
 ### BUGREPORT.md
 
-```markdown
 # Bug Report 1
 
 ## Summary
@@ -36,12 +35,9 @@ POST /pet endpoint fails with a 400 Bad Request when sending invalid pet data.
      "name": "Fluffy",
      "status": "invalid_status"
    }
+    ```
 
-
-### BUGREPORT-3.md
-
-```markdown
-# Bug Report
+# Bug Report 3
 
 ## Summary
 DELETE /pet/{petId} endpoint returns incorrect status code for an invalid pet ID.
