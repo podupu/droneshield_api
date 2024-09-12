@@ -1,5 +1,11 @@
 # Petstore API Testing
 
+#CI/CD
+[CircleCI](https://app.circleci.com/pipelines/circleci/QmhhSZw4MHEYrcV7zaF5La/D9wuaMemB4RiAqLfqVAg1P?branch=master)
+<img src="images/ci.png" width="900">
+#Report
+[https://output.circle-artifacts.com/output/job/c38bb55a-93a9-448b-9916-5f7b0c8e3474/artifacts/0/cypress-reports/mochawesome.html]
+<img src="images/report.png" width="900">
 ## Overview
 This project contains automated tests for the Petstore API using Cypress and TypeScript.
 
