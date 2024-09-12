@@ -26,7 +26,7 @@ This project contains automated tests for the Petstore API using Cypress and Typ
 - Open Cypress Test Runner: `npm run test:open`
 
 ## Project Structure
-- **cypress/integration/api-tests**: Contains API test cases.
+- **cypress/e2e/api-tests**: Contains API test cases.
 - **cypress/support**: Custom commands and setup.
 - **cypress/plugins**: Cypress plugins configuration.
 
