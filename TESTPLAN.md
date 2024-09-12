@@ -1,5 +1,4 @@
 
-```markdown
 # Petstore API Testing
 
 ## Test Plan and Strategy
@@ -130,4 +129,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any inquiries, please contact [Avinash Eediga](mailto:avinash.eediga@gmail.com).
-```

@@ -18,6 +18,12 @@
 
 This project contains automated tests for the Swagger Petstore API, focusing on CRUD operations for the "Pets" resource. The testing is done using Cypress with TypeScript. Additionally, performance tests are included using Apache JMeter, and Postman collections are run using Newman for API testing.
 
+**Please look for details in the below files**:
+- README.md 
+- TESTPLAN.md 
+- EXERCISE.md
+- BUGREPORT.md
+
 ## Prerequisites
 
 - Node.js and npm (for running Cypress and Newman)
