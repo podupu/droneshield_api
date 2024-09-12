@@ -33,24 +33,25 @@ This project contains automated tests for the Swagger Petstore API, focusing on 
 
 ## Setup
 
-### 1. Clone the Repository
+## Prerequisites
+- Node.js (>= 16.x)
+- npm (>= 6.x)
+
+
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/podupu/droneshield_api.git
 cd droneshield_api
 ```
 
-### 2. Install Dependencies
+## 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Configure Cypress
-
-Cypress configuration is included in the `cypress.json` file. Ensure that the base URL is set to `https://petstore.swagger.io/` in your Cypress configuration.
-
-### 4. Run Cypress Tests
+## 3. Run Cypress Tests
 
 To run the Cypress tests, use:
 
@@ -63,19 +64,14 @@ Or to run the tests headlessly:
 ```bash
 npx cypress run
 ```
-## Prerequisites
-- Node.js (>= 16.x)
-- npm (>= 6.x)
 
-## Installation
-1. Clone the repository.
-2. Run `npm install` to install dependencies.
+## 4. Running Tests
 
-## Running Tests
 - Run all tests: `npm test`
 - Open Cypress Test Runner: `npm run test:open`
 
 ## Project Structure
+
 - **cypress/e2e/api-tests**: Contains API test cases.
 - **cypress/support**: Custom commands and setup.
 - **cypress/plugins**: Cypress plugins configuration.
@@ -106,14 +102,8 @@ npx cypress run
 
 1. **Download and Install JMeter**:
    - Download JMeter from [Apache JMeter](https://jmeter.apache.org/download_jmeter.cgi).
-   - Extract the archive and set up JMeter on your machine.
 
-2. **Create Test Plan**:
-   - Open JMeter and create a new test plan for the Petstore API.
-   - Add HTTP Request samplers for each endpoint with appropriate methods and data.
-
-3. **Run Performance Tests**:
-   - Save the test plan as `petstore-jmeter-test.jmx`.
+2. **Run Performance Tests**:
    - Execute the test using JMeter GUI or CLI:
      ```bash
      jmeter -n -t petstore-jmeter-test.jmx -l performance-results.jtl
